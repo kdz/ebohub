@@ -1,0 +1,23 @@
+## Python virtual environment
+
+*env
+
+## IntelliJ folders and files
+
+.idea/
+*.iml
+*.ipr
+*.iws
+out
+.idea_modules/
+scopes/
+
+## Others
+
+**/*.pyc
+.DS_Store
+**/__pycache__
+*.iml
+.ipynb_checkpoints
+.name
+Icon?
