@@ -3,18 +3,28 @@
     <h1>SMS Log</h1>
     <ul>
         {% for sms in SMS.select() %}
-        <li> {{ sms.__repr__() }} </li>
+        <li> 
+            <b> from: </b> {{ sms.sender.name }}
+            <b> body: </b> {{ sms.body }}
+            <b> on: </b> {{ sms.time }} 
+        </li>
         {% endfor %}
     </ul>
 
     <h2> Map with Markers of Confirmed Cases</h2>
-    <div>With slightly deeper analysis of SMS messages and more geo-data, different maps can show things like:
+    <ul>
+        <li><img width=12px src='/static/images/icon-red.png'/> = Infected</li>
+        <li><img width=12px src='/static/images/icon-yellow.png'/> = Suspect</li>
+        <li><img width=12px src='/static/images/icon-blue.png'/> = Exposed</li>
+    </ul>
+    <div>With deeper analysis of SMS messages and more geo-data, different maps can show things like:
         <ul>
             <li>suspects, confirmed, not-quarantined, etc. </li>
             <li>dated points, regions, or paths where public exposure may have occurred.</li>
             <li>risks, based on population density, travel profiles, cultural practices etc.</li>
         </ul>
     </div>
+    <i>Note: Markers on exactly the same location currently cover each other. </i>
     {{mymap.js}}
     {{mymap.html}}
 

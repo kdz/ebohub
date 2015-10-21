@@ -25,7 +25,9 @@ def location(p: Union[Patient, HCWorker], loc: str) -> str:
         else:
             return msg1
     else:
-        return "Sorry, invalid location"
+        locs = [l.name for l in Chiefdom.select()]
+        locString = ", ".join(locs)
+        return "Sorry, invalid location. Valid locations are: %s" % (locString)
 
 def _notify_closest_worker(patient: Patient) -> str:
     workers = patient.candidate_workers()
@@ -49,13 +51,14 @@ def patient_infected(p: Patient) -> str:
 
 def update_case(w: HCWorker, case_id: int, status: str):
     log("update(%s, %s, %s)" % (w, case_id, status))
+    statuses = ", ".join(Patient.status_enum)
     if Patient.exists(Patient.id == case_id) and status in Patient.status_enum:
         patient = Patient.get(Patient.id == case_id)
         patient.status = status
         patient.save()
-        return "status %s for %s accepted" % (status, patient.name)
+        return "Status %s for %s accepted" % (status, patient.name)
     else:
-        return "status DNE"
+        return "Status not recognized. Options are: %s" ++ statuses
 
 def new_case(w: HCWorker, patient_phone: str):
     log("new phone %s received" % (patient_phone))

@@ -23,6 +23,14 @@ def home():
     r = flask.render_template('home.html')
     return r
 
+@TheApp.route("/reset_db")
+def reset_the_db():
+    log("Reset Data Base")
+    from src.db_init import db_reset
+    db_reset()
+    r = flask.render_template('home.html')
+    return r
+
 class Marker:
     def __init__(self, **kw):
         self.__dict__ = kw
@@ -41,8 +49,13 @@ class MapView(admin.BaseView):
         markers_2 = [Marker(lat=p.location.latitude,
             lng=p.location.longitude,
             icon='/static/images/icon-blue.png') for p in exposed]
-        markers = markers_1 + markers_2
-        log(markers)
+        suspects = Patient.select().where((Patient.status == 'suspect'))
+        markers_3 = [Marker(lat=p.location.latitude,
+            lng=p.location.longitude,
+            icon='/static/images/icon-yellow.png') for p in suspects]
+
+        markers = markers_1 + markers_2 + markers_3
+
         if markers != []:
             mid_lat = sum(m.lat for m in markers) / len(markers)
             mid_lng = sum(m.lng for m in markers) / len(markers)
@@ -104,6 +117,8 @@ TheAdmin.add_view(ModelView(HCWorker))
 TheAdmin.add_view(ModelView(SMS))
 #TheAdmin.add_view(ModelView(Contact, name="Contact Tracing"))
 TheAdmin.add_view(MapView(name='Logs and Map'))
+
+TheApp.secret_key = 't\xad\xbbR\xc3\xd6t\xe4\xa09\x93j\x9cTw\xf4\xf3\xea\xb3>\xbc\xed~U'
 
 if __name__ == "__main__":
     TheApp.run(passthrough_errors=True, use_reloader=False)
