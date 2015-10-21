@@ -105,29 +105,29 @@ def exposed(w: HCWorker, origin_id: int, contact_phone: str):
         return "origin not found, or contact already linked to an origin"
 
 def hc_help(*a, **k):
-    return ',\n'.join([patt for patt, func in Messages[HCWorker]])
+    return ',\n'.join(["%s: %s" % (patt, help) for patt, func, help in Messages[HCWorker]])
 def patient_help(*a, **k):
-    return ',\n'.join([patt for patt, func in Messages[Patient]])
+    return ',\n'.join(["%s: %s" % (patt, help) for patt, func, help in Messages[Patient]])
 
 Messages = {
-    HCWorker: [("loc {loc}", location),  # ==> res.named == {'loc' : 'austin'}
-               ("todo", todo_for_worker),
-               ("update {case_id:d} {status}", update_case),
-               ("test {patient_phone} ", new_case),
+    HCWorker: [("loc {loc}", location, "Set location"),  # ==> res.named == {'loc' : 'austin'}
+               ("todo", todo_for_worker, "Get ToDos"),
+               ("update {case_id:d} {status}", update_case, "Update a case"),
+               ("test {patient_phone} ", new_case, "(Not used)"),
      #          ("new {patient_name} loc {patient_loc} phone {patient_phone} status {patient_status}", new_case),
-               ("i'm sick", worker_infected),
-               ("patient {origin_id:d} contacted {contact_phone}", exposed),
-               ("#help", hc_help)],
-    Patient:  [("#info", INFO),
-               ("loc {loc}", location),
+               ("i'm sick", worker_infected, "Register as Patient"),
+               ("patient {origin_id:d} contacted {contact_phone}", exposed, "Contact Tracing"),
+               ("#help", hc_help, "Get This Help Msg")],
+    Patient:  [("#info", INFO, "Get Ebola Info"),
+               ("loc {loc}", location, "Set location"),
 #               ("contacted {c}", contacts),  # ==> res.named == {'c' : 'samuel'}
-               ("i'm sick", patient_infected),
-               ("#help", patient_help)]
+               ("i'm sick", patient_infected, "Register as Patient"),
+               ("#help", patient_help, "Get This Help Msg")]
 }
 
 def response_to_sms_body(msg: str, p: Union[Patient, HCWorker]) -> str:
     log("response_to_sms_body (%s, %s)" %(msg, p))
-    for pattern, func in Messages[type(p)]:
+    for pattern, func, help in Messages[type(p)]:
         res = parse.parse(pattern, msg)
         if res is not None:
             if isinstance(func, str):
