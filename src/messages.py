@@ -42,12 +42,17 @@ def _notify_closest_worker(patient: Patient) -> str:
 def worker_infected(w: HCWorker) -> str:
     p = Patient.create(name=w.name, phone=w.phone, location=w.location, status="infected")
     w.delete_instance()
-    return "You are registered as a patient. " + _notify_closest_worker(p)
+    return "You are registered as a patient. Ensure your location is correct. " + _notify_closest_worker(p)
+
+def set_name(p: Patient, name: str) -> str:
+    p.name = name
+    p.save()
+    return "Your name has been updated."
 
 def patient_infected(p: Patient) -> str:
     p.status = 'infected'
     p.save()
-    return "Your status has been updated. Please quarantine yourself." + _notify_closest_worker(p)
+    return "Your status has been updated. Please quarantine yourself. Ensure your location is correct. " + _notify_closest_worker(p)
 
 def update_case(w: HCWorker, case_id: int, status: str):
     log("update(%s, %s, %s)" % (w, case_id, status))
@@ -119,6 +124,7 @@ Messages = {
                ("patient {origin_id:d} contacted {contact_phone}", exposed, "Contact Tracing"),
                ("#help", hc_help, "Get This Help Msg")],
     Patient:  [("#info", INFO, "Get Ebola Info"),
+               ("name {name}", set_name, "Set name"),
                ("loc {loc}", location, "Set location"),
 #               ("contacted {c}", contacts),  # ==> res.named == {'c' : 'samuel'}
                ("i'm sick", patient_infected, "Register as Patient"),
