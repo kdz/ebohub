@@ -77,10 +77,10 @@ class HCWorker(BaseModel):
     def __unicode__(self):
         return self.name
 
-class Contact(BaseModel):
-    sender = ForeignKeyField(Patient, related_name='contacts')
-    sent_on = CharField() # TODO: normalize?
-    description = TextField()
+# class Contact(BaseModel):
+#     sender = ForeignKeyField(Patient, related_name='contacts')
+#     sent_on = CharField() # TODO: normalize?
+#     description = TextField()
 
 
 class SMS(BaseModel):
