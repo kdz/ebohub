@@ -4,7 +4,7 @@
     <ul>
         {% for sms in SMS.select() %}
         <li> 
-            <b> from: </b> {{ sms.sender.name }}
+            <b> from: </b> {{ sms.sender.phone }}
             <b> body: </b> {{ sms.body }}
             <b> on: </b> {{ sms.time }} 
         </li>
