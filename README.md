@@ -2,7 +2,8 @@
 A tool to support health-care workers in mobile Ebola disease surveillance. 
 
 Visit http://ebohub.herokuapp.com for a demo, including the web/admin interfaces and SMS disease-surveillance messaging.
-https://challenges.openideo.com/challenge/fighting-ebola/ideas/sms-civilian-helpline-and-disease-surveillance-system/comments#comments-section for EboHub on OpenIDEO.
+EboHub on OpenIDEO:
+https://challenges.openideo.com/challenge/fighting-ebola/ideas/sms-civilian-helpline-and-disease-surveillance-system/comments#comments-section
 
 This, of course, assumes:
 
