@@ -61,7 +61,7 @@ The easiest way is to use the [system as currently deployed](ebohub.herokuapp.co
 
 To use the currently deployed system:
 
-  - Gather 2 or more cell phones. Let's call these phones `Patient-P` and `Nurse-N`.
+  - Gather 2 or more cell phones. Let's call 2 of these phones `Patient-P` and `Nurse-N`.
   - Point your web browser at [EboHub.herokuapp.com](http://ebohub.herokuapp.com).
   - Note the primary contact number for all Ebohub SMS and Voice interactions. Let's call this `EboNumber`.
   - Browse the list of current patients, chiefdoms (regions), and health care workers.
