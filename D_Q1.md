@@ -51,9 +51,9 @@ By building first and foremost atop a foundation of 2-way SMS communication, wit
 
 By continuously building up a shared cloud database, and providing systematic access to workers and the public to key parts of this data, both upon request and via “push”, EboHub will remove one important barrier to better managing the outbreak. Entire populations in the affected communities will benefit. Having clear, current, and consistent information available to both communities and health workers will reduce errors, miscommunications, rumors, and mistrust while increasing effective resource mobilization.
 
-### How To Use or Run The Program ###
+### How To Use The Program ###
 
-The easiest way is to use the [system as currently deployed](ebohub.herokuapp.com) on Heroku, since it is already configured with a PostGres database and with a Twilio account and phone number for the SMS-http gateway. Alternately, you can download the code from [github](https://github.com/kdz/ebohub) and follow the installation instructions, but to use the full functionality and run all tests you will need to set up a Postgres database and configure a Twilio account to point to a publicly visible URL that serves the EboHub web app.
+The easiest way is to use the [system as currently deployed](ebohub.herokuapp.com) on Heroku, since it is already configured with a PostGres database and with a Twilio account and phone number for the SMS-http gateway. 
 
 Note that aaccess controls are currently disabled to make it easy for the public to run demos. The home page has a link to reset the database if necessary.
 
@@ -75,3 +75,17 @@ To use the currently deployed system:
   - `Patient-P` registers moves into `Yorkville` by sending `loc Yorkville`. `Nurse-N` is notified.
   - `Nurse-N` gets infected and sends in `i'm sick`.
   - An administrator visits the `Logs and Map` page to look at the current outbreak map.
+
+### How to Install and Run the Program ###
+
+A full local install to run the program or its executable tests involves these main steps. It is easier to use the version deployed on Heroku instead.
+
+1. Unzip the zip file of the entire program, or `git clone` from [github](https://github.com/kdz/ebohub)
+2. Install Python 3.4 (recommended source: [anaconda](https://www.continuum.io/downloads)
+3. Set up a Python virtual env using pyvenv in the app folder, and activate it.
+4. Run `pip install -r requirements.txt` to install all the needed libraries.
+5. Install a PostGresql database and start the db-server. Run `python db_init.py` from the src folder.
+6. Setup a Twilio account, configure the Twilio phone number to route SMS and Voice requests to your running app. Consider using something like [ngrok](https://ngrok.com/) to connect the public URL to your running app.
+8. Start the web server with: `python ebohub_app.py`.
+7. Run `pytest tests/test_any.py` from within the app folder to run all the tests.
+9. Start using the app through your browser and cell phones.
