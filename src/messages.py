@@ -33,16 +33,16 @@ def _notify_closest_worker(patient: Patient) -> str:
     workers = patient.candidate_workers()
     if workers.count() > 0:
         w = workers.get()
-        msg = 'Please contact patient %s at %s in %s' % (patient.name, patient.phone, patient.location.name)
+        msg = 'Please contact patient %s(%s)\n  at %s\n  in %s' % (patient.name, patient.id, patient.phone, patient.location.name)
         TW_client.messages.create(to=w.phone, from_=TW_phone, body=msg)
-        return "Health worker %s at %s notified to contact you shortly" % (w.name, w.phone)
+        return "Health worker %s\n  at %s\n  notified to\n  contact you shortly" % (w.name, w.phone)
     else:
-        return "No health worker currently available. Please try again later."
+        return "No health worker currently available.\nPlease try again later."
 
 def worker_infected(w: HCWorker) -> str:
     p = Patient.create(name=w.name, phone=w.phone, location=w.location, status="infected")
     w.delete_instance()
-    return "You are registered as a patient. Ensure your location is correct. " + _notify_closest_worker(p)
+    return "You are registered as a patient.\nUpdate your location. " + _notify_closest_worker(p)
 
 def set_name(p: Patient, name: str) -> str:
     p.name = name
@@ -52,7 +52,7 @@ def set_name(p: Patient, name: str) -> str:
 def patient_infected(p: Patient) -> str:
     p.status = 'infected'
     p.save()
-    return "Your status has been updated. Please quarantine yourself. Ensure your location is correct. " + _notify_closest_worker(p)
+    return "Your status has been updated.\nPlease quarantine yourself.\nUpdate your location. " + _notify_closest_worker(p)
 
 def update_case(w: HCWorker, case_id: int, status: str):
     log("update(%s, %s, %s)" % (w, case_id, status))
@@ -92,9 +92,9 @@ def todo_for_worker(w: HCWorker) -> str:
                                       (Patient.location == w.location))
     exposed = Patient.select().where((Patient.status == 'exposed') &
                                   (Patient.location == w.location))
-    msg1 = "INFECTED: %s" % ', '.join(["%s %s %s phone: %s  " % (p.id, p.location, p.name, p.phone) for p in infected])
-    msg2 = "SUSPECT: %s" % ', '.join(["%s %s %s phone: %s  " % (p.id, p.location, p.name, p.phone) for p in suspect])
-    msg3 = "EXPOSED: %s" % ', '.join(["%s %s %s phone: %s  " % (p.id, p.location,p.name, p.phone) for p in exposed])
+    msg1 = "INFECTED:\n %s" % ',\n '.join(["%s %s %s phone: %s  " % (p.id, p.location, p.name, p.phone) for p in infected])
+    msg2 = "SUSPECT:\n %s" % ',\n '.join(["%s %s %s phone: %s  " % (p.id, p.location, p.name, p.phone) for p in suspect])
+    msg3 = "EXPOSED:\n %s" % ',\n '.join(["%s %s %s phone: %s  " % (p.id, p.location,p.name, p.phone) for p in exposed])
     return msg1 + "\n " + msg2 + "\n" + msg3
 
 def exposed(w: HCWorker, origin_id: int, contact_phone: str):
@@ -105,9 +105,9 @@ def exposed(w: HCWorker, origin_id: int, contact_phone: str):
                                  location=origin.location,
                                  status='exposed',
                                  exposed_to=origin)
-        return "origin found, contact %s added" %(contact)
+        return "origin found,\n  contact %s added" %(contact)
     else:
-        return "origin not found, or contact already linked to an origin"
+        return "origin not found,\n  or contact already linked to an origin"
 
 def hc_help(*a, **k):
     return ',\n'.join(["%s: %s" % (patt, help) for patt, func, help in Messages[HCWorker]])
@@ -140,4 +140,4 @@ def response_to_sms_body(msg: str, p: Union[Patient, HCWorker]) -> str:
                 return func
             else:
                 return func(p, **res.named) # {'a': 'b'} ==> (a=b)
-    return "Message not recognized. Text '#help' for options."
+    return "Message not recognized.\nText '#help' for options."
