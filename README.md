@@ -92,7 +92,7 @@ EboHub began as a idea at Columbia University's Ebola Design Challenge in early 
 
 I started developing EboHub in mid-September 2014. As it progressed, I got feedback from my team, from other groups including the [NYU hackathon](http://engineering.nyu.edu/events/2014/11/01/hack-ebola-nyu), and from [OpenIdeo](https://challenges.openideo.com/challenge/fighting-ebola/ideas/sms-civilian-helpline-and-disease-surveillance-system/comments#comments-section).
 
-It was built under time constraint from Columbia and NYU competitions, with an intense sense of racing against the epidemic, while trying my best to keep up with Freshman course work. I have worked on it for about 8 months now, through several iterations with feedback from healthcare workers (including the one on my team) and from the *There Is No Limit* foundation, an NGO based in Guinea. As of Summer 2015, EboHub was being prepared for piloting in Guinea by *There Is No Limit*. This NGO and I applied for USAID funding but we only made it to the 2nd round.
+It was built under time constraint from Columbia and NYU competitions, with an intense sense of racing against the epidemic, while trying my best to keep up with Freshman course work. I have worked on it for about 8 months now, through several iterations with feedback from healthcare workers (including the one on my team) and from the [*There Is No Limit* foundation](http://www.thereisnolimitfoundation.org/), an NGO based in Guinea. As of Summer 2015, EboHub was being prepared for piloting in Guinea by *There Is No Limit*. This NGO and I applied for USAID funding but we only made it to the 2nd round.
 
 ### Evolution of EboHub ###
 
