@@ -118,7 +118,7 @@ Messages = {
     HCWorker: [("loc {loc}", location, "Set location"),  # ==> res.named == {'loc' : 'austin'}
                ("todo", todo_for_worker, "Get ToDos"),
                ("update {case_id:d} {status}", update_case, "Update a case"),
-               ("test {patient_phone} ", new_case, "(Not used)"),
+               ("test {patient_phone} ", new_case, "(Lab Test Results - Not implemented)"),
      #          ("new {patient_name} loc {patient_loc} phone {patient_phone} status {patient_status}", new_case),
                ("i'm sick", worker_infected, "Register as Patient"),
                ("patient {origin_id:d} contacted {contact_phone}", exposed, "Contact Tracing"),
