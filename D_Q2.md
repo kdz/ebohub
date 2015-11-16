@@ -46,6 +46,8 @@ Some of the top current TODO items as of Summer 2015 include:
   - Full support contact-tracing
   - Integrate with iHRIS health-facility databases (e.g. where are beds available?) with 2-day data feeds
   - Internationalize the application (both SMS and Web interfaces)
+  - Abbreviated message formats
+  - More robust security
   - Hardware interface to a GSM modem for regions that do not even have SMS-infrastructure
 
 It was, overall, an awesome experience.
