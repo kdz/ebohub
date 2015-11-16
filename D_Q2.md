@@ -43,6 +43,7 @@ It is currently not clear if EboHub will be developed further. My NGO partner ha
 
 Some of the top current TODO items as of Summer 2015 include:
 
+  - Improved / customizable TODO case assignment to workers
   - Full support contact-tracing
   - Integrate with iHRIS health-facility databases (e.g. where are beds available?) with 2-day data feeds
   - Internationalize the application (both SMS and Web interfaces)

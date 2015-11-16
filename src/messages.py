@@ -61,7 +61,7 @@ def update_case(w: HCWorker, case_id: int, status: str):
         patient = Patient.get(Patient.id == case_id)
         patient.status = status
         patient.save()
-        return "Status %s for %s accepted" % (status, patient.name)
+        return "Status %s for %s updated" % (status, patient.name)
     else:
         return "Status not recognized. Options are: %s" ++ statuses
 
@@ -92,9 +92,9 @@ def todo_for_worker(w: HCWorker) -> str:
                                       (Patient.location == w.location))
     exposed = Patient.select().where((Patient.status == 'exposed') &
                                   (Patient.location == w.location))
-    msg1 = "INFECTED:\n %s" % ',\n '.join(["%s %s %s phone: %s  " % (p.id, p.location, p.name, p.phone) for p in infected])
-    msg2 = "SUSPECT:\n %s" % ',\n '.join(["%s %s %s phone: %s  " % (p.id, p.location, p.name, p.phone) for p in suspect])
-    msg3 = "EXPOSED:\n %s" % ',\n '.join(["%s %s %s phone: %s  " % (p.id, p.location,p.name, p.phone) for p in exposed])
+    msg1 = "INFECTED:\n %s" % ',\n '.join(["%s %s\n   %s" % (p.id, p.name, p.phone) for p in infected])
+    msg2 = "SUSPECT:\n %s" % ',\n '.join(["%s %s\n   %s" % (p.id, p.name, p.phone) for p in suspect])
+    msg3 = "EXPOSED:\n %s" % ',\n '.join(["%s %s\n   %s" % (p.id, p.name, p.phone) for p in exposed])
     return msg1 + "\n " + msg2 + "\n" + msg3
 
 def exposed(w: HCWorker, origin_id: int, contact_phone: str):
