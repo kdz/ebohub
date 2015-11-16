@@ -59,21 +59,22 @@ Note that aaccess controls are currently disabled to make it easy for the public
 
 To use the currently deployed system:
 
-  - Gather 2 or more cell phones. Let's call 2 of these phones `Patient-P` and `Nurse-N`.
+  - Gather 2 or more cell phones. Let's call 2 of these phones `Patient` and `Nurse`.
   - Point your web browser at [EboHub.herokuapp.com](http://ebohub.herokuapp.com).
   - Note the primary contact number for all Ebohub SMS and Voice interactions. Let's call this `EboNumber`.
   - Browse the list of current patients, chiefdoms (regions), and health care workers.
-  - `Patient-P` sends `#help` to `EboNumber` to see SMS options as a patient.
-  - `Patient-P` sends `#info` and receives information to self-check symptoms etc.
-  - `Patient-P` places a voice call to `EboNumber` and discusses his issues. Voice-reponse is just a placeholder for now.
-  - `Patient-P` registers as a Patient by sending `i'm sick` to `EboNumber`.
-  - `Patient-P` registers his name by sending `name <some-name>`.
-  - `Nurse-N` registers as a health-care worker in `Yorkville` by:
+  - `Patient` sends `#help` to `EboNumber` to see SMS options as a patient.
+  - `Patient` sends `#info` and receives information to self-check symptoms etc.
+  - `Patient` places a voice call to `EboNumber` and discusses his issues. Voice-reponse is just a placeholder for now.
+  - `Patient` registers as a Patient by sending `i'm sick` to `EboNumber`.
+  - `Patient` registers his name by sending `name <some-name>`.
+  - `Nurse` registers as a health-care worker in `Yorkville` by:
     - Create an entry on the `H C Worker` page
     - REgister the phone number in this exact form: `+1` followed by area-code + number, no `-` or ().
-  - `Nurse-N` asks for her assigned tasks by sending `todo`. She receives assigned patient information.
-  - `Patient-P` registers moves into `Yorkville` by sending `loc Yorkville`. `Nurse-N` is notified.
-  - `Nurse-N` gets infected and sends in `i'm sick`.
+  - `Nurse` asks for her assigned tasks by sending `todo`. She receives assigned patient information.
+  - `Patient` registers moves into `Yorkville` by sending `loc Yorkville`. `Nurse` is notified.
+  - `Nurse` visits `Patient` and sends `update` with patient-id and status.
+  - `Nurse` gets infected and sends in `i'm sick`.
   - An administrator visits the `Logs and Map` page to look at the current outbreak map.
 
 ### How to Install, Run, and Test the Program ###
