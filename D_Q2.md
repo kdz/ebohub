@@ -20,11 +20,19 @@ It was built under time constraint from Columbia and NYU competitions, with an i
 
 Here are some of my sketches of how the EboHub concept evolved over time, starting from that first Columbia meeting.
 
+#### At the first meeting ####
+
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172315/e1134416-8bca-11e5-87d3-4dae40cb0671.png)
+
+#### At the first meeting ####
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172307/d0c2db94-8bca-11e5-833c-57db7b11d514.png)
 
+#### At the first meeting ####
+
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172302/c1d32ae4-8bca-11e5-82be-e8d1f62ebe8b.png)
+
+#### At the first meeting ####
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172298/b08bc98a-8bca-11e5-850e-d0eecb6fe57c.png)
 
