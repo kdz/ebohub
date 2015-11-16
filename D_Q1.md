@@ -36,7 +36,7 @@ EboHub uses Twilio as a gateway for SMS-Http and Voice-Http bridge services, Pyt
 
 EboHub is currently a deployed robust functioning prototype with case surveillance, worker, patient, and facility coordination, and public education, which allows:
 
-  - 2-way SMS-based interaction with members of the public: #help (responds with menu of options), #info (provides disease, symptom, and care information), loc (updates the database with new patient location), and i’m sick (updates patient as a suspect in database).
+  - 2-way SMS-based interaction with members of the public: `#help` (responds with menu of options), `#info` (provides disease, symptom, and care information), `loc` (updates the database with new patient location), and `i’m sick` (updates patient as a suspect in database).
   - 2-way SMS-based interaction with health-care workers: #loc (updates health-care worker’s location), todo (provides worker with assigned list of suspect, infected, and contact cases for worker’s location), update case (updates patient status for a given case), test results (updates or retrieves test results), contact (updates contact-tracing information for an infected case), i’m sick (marks health-care worker as a suspect), and #help (provides menu of options). 
   - Map of cases including suspects, infections, and exposures (people who may have been exposed and should be tracked).
   - Voice and IVR interaction for the public.
