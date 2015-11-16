@@ -26,7 +26,7 @@ Major problems with the epidemic included:
 
 ### The Solution ###
 
-I developed EboHub as a cloud-based service with a centralized disease database containing surveillance, case and contact-tracing data. It uses 2-way SMS interactions with health-care workers and the public (with call-in and browser-based interfaces as well), to provide real-time access to case status, to-do lists for workers, contact-tracing, symptom and care instructions and allows authorized workers to do SMS-driven updates to the disease database. 
+I developed EboHub as a cloud-based service with a centralized disease database containing surveillance, case and contact-tracing data. It uses 2-way SMS interactions with health-care workers and the public (with call-in and browser-based interfaces as well), to provide real-time access to case status, to-do lists for workers, contact-tracing, symptom and care instructions, outbreak maps, and allows authorized workers to do SMS-driven updates to the disease database. 
 
 EboHub uses Twilio as a gateway for SMS-Http and Voice-Http bridge services, Python as the implementation language, Flask as the web-server framework, PostGresql as a database, and Heroku as a scalable deployment platform. I used ngrok during development to route public HTTP requests (originating from SMS or browser interactions) to my laptop.
 
@@ -38,7 +38,7 @@ EboHub is deployed as a robust functioning prototype with case surveillance, wor
 
   - 2-way SMS-based interaction with members of the public: `#help` (responds with menu of options), `#info` (provides disease, symptom, and care information), `loc` and `name` (updates the database with new patient info), and `i’m sick` (updates patient as a suspect in database).
   - 2-way SMS-based interaction with health-care workers: `#loc` (updates health-care worker’s location), `todo` (provides worker with assigned list of suspect, infected, and contact cases for worker’s location), `update` case (updates patient status for a given case), `contact` (updates contact-tracing information for an infected case), `i’m sick` (marks health-care worker as a suspect), and `#help` (provides menu of options). 
-  - Map of cases including suspects, infections, and exposures (people who may have been exposed and should be tracked).
+  - Outbreak map with suspects, infections, and exposures (people who may have been exposed and should be tracked).
   - Voice and IVR interaction for the public (currently just a placeholder message).
   - Initial SMS-blast capability to send SMS messages to a selected set of workers or the public.
   - Initial login and access controls for the web-based interface (disabled for demo purposes).
