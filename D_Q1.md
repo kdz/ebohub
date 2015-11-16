@@ -24,9 +24,11 @@ Major problems included:
   - Healthcare workers were recording patient, disease, and test data on paper
   - Mobile telecomm infrastructure was for feature phones (SMS-based) without web access
 
-### Our Solution ###
+### The Solution ###
 
 I developed EboHub as a cloud-based service with a centralized disease database containing surveillance, case and contact-tracing data. It used 2-way SMS interactions with health-care workers and the public (with call-in and browser-based interfaces as well), to provide real-time access to case status, to-do lists for workers, contact-tracing, symptom and care instructions as well as allowing SMS-driven updates to that disease database. 
+
+EboHub uses Twilio as a gateway for SMS-Http and Voice-Http bridge services, Python as the implementation language, Flask as the web-server framework, PostGresql as a database, and Heroku as a scalable deployment platform.
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172302/c1d32ae4-8bca-11e5-82be-e8d1f62ebe8b.png)
 
