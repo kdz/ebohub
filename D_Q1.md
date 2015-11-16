@@ -9,7 +9,7 @@ Description of the program, including:
   
 ### EboHub ###
 
-EboHub is an online web-based application to assist health-care workers, patients, and administrators coordinate disease surveillance and management on the frontlines of the battle against Ebola.
+EboHub is an cloud-based application to assist health-care workers, patients, and administrators coordinate disease surveillance and management on the frontlines of the battle against Ebola through SMS and web interfaces.
 
 ### The Problem and Constraints ###
 
@@ -26,26 +26,24 @@ Major problems with the epidemic included:
 
 ### The Solution ###
 
-I developed EboHub as a cloud-based service with a centralized disease database containing surveillance, case and contact-tracing data. It used 2-way SMS interactions with health-care workers and the public (with call-in and browser-based interfaces as well), to provide real-time access to case status, to-do lists for workers, contact-tracing, symptom and care instructions as well as allowing SMS-driven updates to that disease database. 
+I developed EboHub as a cloud-based service with a centralized disease database containing surveillance, case and contact-tracing data. It uses 2-way SMS interactions with health-care workers and the public (with call-in and browser-based interfaces as well), to provide real-time access to case status, to-do lists for workers, contact-tracing, symptom and care instructions and allows authorized workers to do SMS-driven updates to the disease database. 
 
-EboHub uses Twilio as a gateway for SMS-Http and Voice-Http bridge services, Python as the implementation language, Flask as the web-server framework, PostGresql as a database, and Heroku as a scalable deployment platform.
+EboHub uses Twilio as a gateway for SMS-Http and Voice-Http bridge services, Python as the implementation language, Flask as the web-server framework, PostGresql as a database, and Heroku as a scalable deployment platform. I used ngrok during development to route public HTTP requests (originating from SMS or browser interactions) to my laptop.
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172302/c1d32ae4-8bca-11e5-82be-e8d1f62ebe8b.png)
 
 ### Why It Is Good ###
 
-EboHub is currently a deployed robust functioning prototype with case surveillance, worker, patient, and facility coordination, and public education, which allows:
+EboHub is deployed as a robust functioning prototype with case surveillance, worker, patient, and facility coordination, and community education, which allows:
 
-  - 2-way SMS-based interaction with members of the public: `#help` (responds with menu of options), `#info` (provides disease, symptom, and care information), `loc` (updates the database with new patient location), and `i’m sick` (updates patient as a suspect in database).
-  - 2-way SMS-based interaction with health-care workers: #loc (updates health-care worker’s location), todo (provides worker with assigned list of suspect, infected, and contact cases for worker’s location), update case (updates patient status for a given case), test results (updates or retrieves test results), contact (updates contact-tracing information for an infected case), i’m sick (marks health-care worker as a suspect), and #help (provides menu of options). 
+  - 2-way SMS-based interaction with members of the public: `#help` (responds with menu of options), `#info` (provides disease, symptom, and care information), `loc` and `name` (updates the database with new patient info), and `i’m sick` (updates patient as a suspect in database).
+  - 2-way SMS-based interaction with health-care workers: `#loc` (updates health-care worker’s location), `todo` (provides worker with assigned list of suspect, infected, and contact cases for worker’s location), `update` case (updates patient status for a given case), `contact` (updates contact-tracing information for an infected case), `i’m sick` (marks health-care worker as a suspect), and `#help` (provides menu of options). 
   - Map of cases including suspects, infections, and exposures (people who may have been exposed and should be tracked).
-  - Voice and IVR interaction for the public.
+  - Voice and IVR interaction for the public (currently just a placeholder message).
   - Initial SMS-blast capability to send SMS messages to a selected set of workers or the public.
-  - Initial login and access controls for the web-based interface.
+  - Initial login and access controls for the web-based interface (disabled for demo purposes).
 
-Currently in-progress: full contact-tracing, and a database of health-care facilities (location, available beds, kits and disposables, etc.), to provide more useful real-time SMS information to workers.
-
-EboHub is unique in its holistic scope focusing on both health workers and locals, and in using SMS as a primary communication channel. EboHub directly addresses key objectives in USAID's original BAA for Fighting Ebola. It strengthens healthcare capacities by providing healthcare workers tools to improve quality and timeliness of patient care thereby preventing the virus from spreading. 
+EboHub is unique in its holistic scope focusing on both health workers and locals, and in using SMS as a primary communication channel. EboHub directly addresses key objectives in USAID's original BAA for Fighting Ebola. It strengthens healthcare capacities by providing healthcare workers tools to improve quality and timeliness of patient care thereby preventing the virus from spreading.
 
 One crucial piece in the fight on Ebola is access to real-time information for health-care workers, health-care administrators, patients, and the public. Many mobile-phone based solutions come up short because vast areas in the region lack access to smart-phones and mobile internet access. EboHub will have a significant positive operational impact on current Ebola surveillance, prevention,  and treatment efforts. 
 
@@ -55,9 +53,9 @@ By continuously building up a shared cloud database, and providing systematic ac
 
 ### How To Use or Run The Program ###
 
-The easiest way is to use the [system as currently deployed](ebohub.herokuapp.com) on Heroku, since it is already configured with a PostGres database and with a Twilio account and phone number for the SMS-http gateway. Alternately, you can download the code from [github](https://github.com/kdz/ebohub) and follow the installation instructions, but to use the full functionality you will need to configure a Twilio account to point to a publicly visible URL that serves the EboHub web app.
+The easiest way is to use the [system as currently deployed](ebohub.herokuapp.com) on Heroku, since it is already configured with a PostGres database and with a Twilio account and phone number for the SMS-http gateway. Alternately, you can download the code from [github](https://github.com/kdz/ebohub) and follow the installation instructions, but to use the full functionality and run all tests you will need to set up a Postgres database and configure a Twilio account to point to a publicly visible URL that serves the EboHub web app.
 
- Note that aaccess controls are currently disabled to make it easy to 
+Note that aaccess controls are currently disabled to make it easy for the public to run demos. The home page has a link to reset the database if necessary.
 
 To use the currently deployed system:
 
