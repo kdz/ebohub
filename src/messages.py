@@ -95,7 +95,7 @@ def todo_for_worker(w: HCWorker) -> str:
     msg1 = "INFECTED:\n %s" % ',\n '.join(["%s %s\n   %s" % (p.id, p.name, p.phone) for p in infected])
     msg2 = "SUSPECT:\n %s" % ',\n '.join(["%s %s\n   %s" % (p.id, p.name, p.phone) for p in suspect])
     msg3 = "EXPOSED:\n %s" % ',\n '.join(["%s %s\n   %s" % (p.id, p.name, p.phone) for p in exposed])
-    return msg1 + "\n " + msg2 + "\n" + msg3
+    return msg1 + "\n" + msg2 + "\n" + msg3
 
 def exposed(w: HCWorker, origin_id: int, contact_phone: str):
     if Patient.exists(Patient.id == origin_id) \
