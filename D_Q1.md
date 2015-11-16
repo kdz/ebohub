@@ -70,7 +70,9 @@ To use the currently deployed system:
   - `Patient-P` places a voice call to `EboNumber` and discusses his issues. Voice-reponse is just a placeholder for now.
   - `Patient-P` registers as a Patient by sending `i'm sick` to `EboNumber`.
   - `Patient-P` registers his name by sending `name <some-name>`.
-  - `Nurse-N` registers as a health-care worker in `Yorkville` by adding an entry on the `H C Worker` page
+  - `Nurse-N` registers as a health-care worker in `Yorkville` by:
+    - Create an entry on the `H C Worker` page
+    - REgister the phone number in this exact form: `+1` followed by area-code + number, no `-` or ().
   - `Nurse-N` asks for her assigned tasks by sending `todo`. She receives assigned patient information.
   - `Patient-P` registers moves into `Yorkville` by sending `loc Yorkville`. `Nurse-N` is notified.
   - `Nurse-N` gets infected and sends in `i'm sick`.
