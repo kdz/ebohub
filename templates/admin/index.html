@@ -2,35 +2,34 @@
 {% block body %}
 {{ super() }}
 <div class="row">
-  <div class="span10 offset1">
-    <h1>Trying It Out</h1>
-    <div>Text #help to 512-942-0915 to get started</div>
+    <div class="span10 offset1">
+        <h1>Trying It Out</h1>
+        <div>Text #help to 512-942-0915 to get started</div>
 
-    <h4>Here is one possible scenario you could try</h4>
-    <ul>
-        <li>Gather 2 or more cell phones. Let's call 2 of these phones PATIENT and NURSE.</li>
-        <li>Point your web browser at <a hred="http://ebohub.herokuapp.com">EboHub</a></li>
-        <li>Note the primary contact number for all Ebohub SMS and Voice interactions. Let's call this EBONUMBER.</li>
-        <li>Browse the list of current patients, chiefdoms (regions), and health care workers.</li>
-        <li>PATIENT sends <b>#help</b> to EBONUMBER to see SMS options as a patient.</li>
-        <li>PATIENT sends <b>#info</b> and receives information to self-check symptoms etc.</li>
-        <li>PATIENT places a voice call to EBONUMBER and discusses his issues. Voice-reponse is just a placeholder for now.</li>
-        <li>PATIENT registers as a Patient by sending <b>i'm sick</b> to EBONUMBER.</li>
-        <li>PATIENT registers his name by sending <b>name terrence</b>.</li>
-        <li>NURSE registers as a health-care worker in <b>Yorkville</b> by:</li>
+        <h4>Here is one possible scenario you could try</h4>
         <ul>
-            <li>Creating an entry on the <b>H C Worker</b> tab / page</li>
-            <li>Register the phone number in this exact form: <b>+1</b> followed by <b>area-code</b> and <b>number</b>, without any extra characters.</li>
+            <li>Gather 2 or more cell phones. Let's call 2 of these phones PATIENT and NURSE.</li>
+            <li>Point your web browser at <a hred="http://ebohub.herokuapp.com">EboHub</a></li>
+            <li>Note the primary contact number for all Ebohub SMS and Voice interactions. Let's call this EBONUMBER.</li>
+            <li>Browse the list of current patients, chiefdoms (regions), and health care workers.</li>
+            <li>PATIENT sends <b>#help</b> to EBONUMBER to see SMS options as a patient.</li>
+            <li>PATIENT sends <b>#info</b> and receives information to self-check symptoms etc.</li>
+            <li>PATIENT places a voice call to EBONUMBER and discusses his issues. Voice-reponse is just a placeholder for now.</li>
+            <li>PATIENT registers as a Patient by sending <b>i'm sick</b> to EBONUMBER.</li>
+            <li>PATIENT registers his name by sending <b>name terrence</b>.</li>
+            <li>NURSE registers as a health-care worker in <b>Yorkville</b> by:</li>
+            <ul>
+                <li>Creating an entry on the <b>H C Worker</b> tab / page</li>
+                <li>Register the phone number in this exact form: <b>+1</b> followed by <b>area-code</b> and <b>number</b>, without any extra characters.</li>
+            </ul>
+            <li>NURSE asks for her assigned tasks by sending <b>todo</b>. She receives assigned patient information (id and contact) in her current location.</li>
+            <li>PATIENT registers moves into <b>Yorkville</b> by sending <b>loc Yorkville</b>. NURSE is notified with patient-id and contact info since she is in <b>Yorkville</b>.</li>
+            <li>NURSE visits PATIENT and sends <b>update</b> with patient-id and status.</li>
+            <li>NURSE gets infected and sends in <b>i'm sick</b>.</li>
+            <li>An administrator sorts the tables by different columns to get overviews.</li>
+            <li>The administrator visits the <b>Logs and Map</b> page to look at the current outbreak map.</li>
         </ul>
-        <li>NURSE asks for her assigned tasks by sending <b>todo</b>. She receives assigned patient information (id and contact) in her current location.</li>
-        <li>PATIENT registers moves into <b>Yorkville</b> by sending <b>loc Yorkville</b>. NURSE is notified with patient-id and contact info since she is in <b>Yorkville</b>.</li>
-        <li>NURSE visits PATIENT and sends <b>update</b> with patient-id and status.</li>
-        <li>NURSE gets infected and sends in <b>i'm sick</b>.</li>
-        <li>An administrator sorts the tables by different columns to get overviews.</li>
-        <li>The administrator visits the <b>Logs and Map</b> page to look at the current outbreak map.</li>
-    </ul>
 
-  </div>
         <h4>Reset the Data Base</h4>
         <p>Having Joe Public directly edit the database via Admin pages can mess up stuff, so you might need to ...</p>
         <ul>
@@ -51,7 +50,6 @@
                 <li>Manage the cycle of symptoms, quarantine, and isolation</li>
             </ul>
         </p>
-
     </div>
 </div>
 {% endblock body %}
