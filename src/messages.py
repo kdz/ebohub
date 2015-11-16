@@ -110,9 +110,9 @@ def exposed(w: HCWorker, origin_id: int, contact_phone: str):
         return "origin not found,\n  or contact already linked to an origin"
 
 def hc_help(*a, **k):
-    return ',\n'.join(["%s: %s" % (patt, help) for patt, func, help in Messages[HCWorker]])
+    return ',\n'.join(["%s:\n  %s" % (patt, help) for patt, func, help in Messages[HCWorker]])
 def patient_help(*a, **k):
-    return ',\n'.join(["%s: %s" % (patt, help) for patt, func, help in Messages[Patient]])
+    return ',\n'.join(["%s:\n  %s" % (patt, help) for patt, func, help in Messages[Patient]])
 
 Messages = {
     HCWorker: [("loc {loc}", location, "Set location"),  # ==> res.named == {'loc' : 'austin'}
