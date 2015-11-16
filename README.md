@@ -123,7 +123,7 @@ Some of the top current TODO items as of Summer 2015 include:
 
   - Improved / customizable TODO case assignment to workers
   - Full support contact-tracing
-  - Integrate with iHRIS health-facility databases (e.g. where are beds available?) with 2-day data feeds
+  - Integrate with iHRIS health-facility databases (e.g. where are beds available?) with 2-way data feeds
   - Internationalize the application (both SMS and Web interfaces)
   - Abbreviated message formats
   - More robust security
