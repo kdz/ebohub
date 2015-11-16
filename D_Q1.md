@@ -70,7 +70,7 @@ To use the currently deployed system:
   - `Patient` registers his name by sending `name <some-name>`.
   - `Nurse` registers as a health-care worker in `Yorkville` by:
     - Create an entry on the `H C Worker` page
-    - REgister the phone number in this exact form: `+1` followed by area-code + number, no `-` or ().
+    - Register the phone number in this exact form: `+1` followed by area-code and number, with no extra characters.
   - `Nurse` asks for her assigned tasks by sending `todo`. She receives assigned patient information in her current location.
   - `Patient` registers moves into `Yorkville` by sending `loc Yorkville`. `Nurse` is notified since she is in `Yorkville`.
   - `Nurse` visits `Patient` and sends `update` with patient-id and status.
