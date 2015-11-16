@@ -35,9 +35,9 @@ def _notify_closest_worker(patient: Patient) -> str:
         w = workers.get()
         msg = 'Please contact patient %s(%s)\n  at %s\n  in %s' % (patient.name, patient.id, patient.phone, patient.location.name)
         TW_client.messages.create(to=w.phone, from_=TW_phone, body=msg)
-        return "Health worker %s\n  at %s\n  notified to\n  contact you shortly" % (w.name, w.phone)
+        return "\nHealth worker %s\n  at %s\n  notified to\n  contact you shortly" % (w.name, w.phone)
     else:
-        return "No health worker currently available.\nPlease try again later."
+        return "\nNo health worker currently available.\nPlease try again later."
 
 def worker_infected(w: HCWorker) -> str:
     p = Patient.create(name=w.name, phone=w.phone, location=w.location, status="infected")

@@ -71,12 +71,13 @@ To use the currently deployed system:
   - `Nurse` registers as a health-care worker in `Yorkville` by:
     - Create an entry on the `H C Worker` page
     - REgister the phone number in this exact form: `+1` followed by area-code + number, no `-` or ().
-  - `Nurse` asks for her assigned tasks by sending `todo`. She receives assigned patient information.
-  - `Patient` registers moves into `Yorkville` by sending `loc Yorkville`. `Nurse` is notified.
+  - `Nurse` asks for her assigned tasks by sending `todo`. She receives assigned patient information in her current location.
+  - `Patient` registers moves into `Yorkville` by sending `loc Yorkville`. `Nurse` is notified since she is in `Yorkville`.
   - `Nurse` visits `Patient` and sends `update` with patient-id and status.
   - `Nurse` gets infected and sends in `i'm sick`.
-  - An administrator visits the `Logs and Map` page to look at the current outbreak map.
-
+  - An administrator sorts the tables by different columns to get overviews.
+  - The administrator visits the `Logs and Map` page to look at the current outbreak map.
+  
 ### How to Install, Run, and Test the Program ###
 
 A full local install to run the program or its executable tests involves these main steps. It is easier to use the version deployed on Heroku instead.
