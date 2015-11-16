@@ -20,16 +20,18 @@ TheAdmin = flask.ext.admin.Admin(TheApp, name="EboHub")
 @TheApp.route("/")
 def home():
     log("Entered HOME route")
-    r = flask.render_template('home.html')
-    return r
+    # r = flask.render_template('home.html')
+    # return r
+    return flask.redirect("admin", code=302)
 
 @TheApp.route("/reset_db")
 def reset_the_db():
     log("Reset Data Base")
     from src.db_init import db_reset
     db_reset()
-    r = flask.render_template('home.html')
-    return r
+    # r = flask.render_template('home.html')
+    # return r
+    return flask.redirect("admin", code=302)
 
 class Marker:
     def __init__(self, **kw):
