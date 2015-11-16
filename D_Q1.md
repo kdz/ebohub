@@ -32,7 +32,7 @@ EboHub uses Twilio as a gateway for SMS-Http and Voice-Http bridge services, Pyt
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172302/c1d32ae4-8bca-11e5-82be-e8d1f62ebe8b.png)
 
-### Why It Is Good ###
+### EboHub Strengths ###
 
 EboHub is deployed as a robust functioning prototype with case surveillance, worker, patient, and facility coordination, and community education, which allows:
 
@@ -76,7 +76,7 @@ To use the currently deployed system:
   - `Nurse-N` gets infected and sends in `i'm sick`.
   - An administrator visits the `Logs and Map` page to look at the current outbreak map.
 
-### How to Install and Run the Program ###
+### How to Install, Run, and Test the Program ###
 
 A full local install to run the program or its executable tests involves these main steps. It is easier to use the version deployed on Heroku instead.
 
