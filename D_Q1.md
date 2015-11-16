@@ -1,12 +1,4 @@
-#Program Description#
 
-Description of the program, including:
-
-  - What does it do?
-  - What problem were you trying to solve?
-  - How does your solution address the problem?
-  - Instructions on how to run the program and tests
-  
 ### EboHub ###
 
 EboHub is an cloud-based application to assist health-care workers, patients, and administrators coordinate disease surveillance and management on the frontlines of the battle against Ebola through SMS and web interfaces.
@@ -80,7 +72,7 @@ To use the currently deployed system:
   
 ### How to Install, Run, and Test the Program ###
 
-A full local install to run the program or its executable tests involves these main steps. It is easier to use the version deployed on Heroku instead.
+A full local install to run the program or its executable tests involves these main steps (although it is easier to directly use the version I have deployed on Heroku instead).
 
 1. Unzip the zip file of the entire program, or `git clone` from [github](https://github.com/kdz/ebohub)
 2. Install Python 3.4 (recommended source: [anaconda](https://www.continuum.io/downloads)
