@@ -32,6 +32,8 @@ EboHub uses Twilio as a gateway for SMS-Http and Voice-Http bridge services, Pyt
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172302/c1d32ae4-8bca-11e5-82be-e8d1f62ebe8b.png)
 
+### Why It Is Good ###
+
 EboHub is unique in its holistic scope focusing on both health workers and locals, and in using SMS as a primary communication channel. EboHub directly addresses key objectives in USAID's original BAA for Fighting Ebola. It strengthens healthcare capacities by providing healthcare workers tools to improve quality and timeliness of patient care thereby preventing the virus from spreading. 
 
 One crucial piece in the fight on Ebola is access to real-time information for health-care workers, health-care administrators, patients, and the public. Many mobile-phone based solutions come up short because vast areas in the region lack access to smart-phones and mobile internet access. EboHub will have a significant positive operational impact on current Ebola surveillance, prevention,  and treatment efforts. 
