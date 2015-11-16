@@ -75,7 +75,7 @@ To use the currently deployed system:
 A full local install to run the program or its executable tests involves these main steps (although it is easier to directly use the version I have deployed on Heroku instead).
 
 1. Unzip the zip file of the entire program, or `git clone` from [github](https://github.com/kdz/ebohub)
-2. Install Python 3.4 (recommended source: [anaconda](https://www.continuum.io/downloads)
+2. Install Python 3.4, recommended source: [anaconda](https://www.continuum.io/downloads)
 3. Set up a Python virtual env using pyvenv in the app folder, and activate it.
 4. Run `pip install -r requirements.txt` to install all the needed libraries.
 5. Install a PostGresql database and start the db-server. Run `python db_init.py` from the src folder.
