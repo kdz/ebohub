@@ -129,7 +129,7 @@ Some of the top current TODO items as of Summer 2015 include:
   - More robust security
   - Hardware interface to a GSM modem for regions that do not even have SMS-infrastructure
 
-It was, overall, an awesome experience.
+It has been, overall, an awesome experience.
 
 
 
