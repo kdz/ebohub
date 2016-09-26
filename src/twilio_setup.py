@@ -1,5 +1,5 @@
 from twilio.rest import TwilioRestClient
-TW_account = "AC19c8832ca89e51ab84e6b1c2cc371569"
-TW_password = "ff573471eec178c8ab9f07dfa72c9b73"
-TW_phone = "+15129420915"
+TW_account = "my_twilio_account_number"
+TW_password = "my_twilio_auth_token"
+TW_phone = "+my_twilio_phone_number"  # format: "+15121234567"
 TW_client = TwilioRestClient(TW_account, TW_password)
