@@ -5,13 +5,12 @@ from peewee import Model, CharField, ForeignKeyField, \
 
 from lib.log import log
 
-# Default DATABASE_URL will be LOCAL_DB_DEFAULT below.
+# Default DATABASE_URL will be LOCAL_DB_DEFAULT below for local development
 # Set environment variable DATABASE_URL if you want something different
 # Other suitable cloud DBs:
-# HEROKU_TEST_DB = "postgres://vyxedeinlwotba:nUTHLGxl7ofntPDPpNbui7Nqyc@ec2-54-83-204-78.compute-1.amazonaws.com:5432/d8tbl02vt8qhlr"
-# ELEPHANTSQL_TEST_DB = "postgres://bffueemb:7c8K7cwh_d5SzWnPkpo07uqw6bcIyC0Q@babar.elephantsql.com:5432/bffueemb"
+# HEROKU_TEST_DB = "postgres://vyxede....."
+# ELEPHANTSQL_TEST_DB = "postgres://bffueem....."
 ## THE PRODUCTION DB::
-# AVOID USING THIS !!! HEROKU_MAIN_DB = "postgres://jfnsqslziawfqo:q7KK69oJAP6KKHBNUBZZjgThTS@ec2-54-83-199-115.compute-1.amazonaws.com:5432/d911o8dcm1d9ll"
 
 LOCAL_DB_DEFAULT = "postgres://localhost:5432/localDB"
 
