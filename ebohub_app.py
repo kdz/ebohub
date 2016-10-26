@@ -21,7 +21,7 @@ TheAdmin = flask.ext.admin.Admin(TheApp, name="EboHub")
 def home():
     log("Entered HOME route")
     # r = flask.render_template('home.html')
-    # return r
+    # return r #
     return flask.redirect("admin", code=302)
 
 @TheApp.route("/reset_db")
