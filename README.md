@@ -1,7 +1,7 @@
 
 # EboHub #
 
-Ebohum [(demo)](http://ebohub.herokuapp.com/admin/) is a cloud-based application to assist health-care workers, patients, and administrators coordinate disease surveillance and management on the frontlines of the battle against Ebola through SMS and web interfaces.
+Ebohub [(demo)](http://ebohub.herokuapp.com/admin/) is a cloud-based application to assist health-care workers, patients, and administrators coordinate disease surveillance and management on the frontlines of the battle against Ebola through SMS and web interfaces.
 
 ## The Problem and Constraints ##
 
