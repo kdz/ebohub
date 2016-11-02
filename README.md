@@ -11,7 +11,7 @@ Major problems with the epidemic included:
 
   - Health care workers have to personally identify remote infections, suspects, and exposures
   - Patients can only be safely handled at suitably equipped Ebola response centers
-  - There are few ways to dissiminate information or to reach out to local communities
+  - There are few ways to disseminate information or to reach out to local communities
   - There was no central coordinated surveillance system that connected to the public and workers
   - Healthcare workers were recording patient, disease, and test data on paper
   - Mobile telecomm infrastructure was for feature phones (SMS-based) without web access
@@ -88,13 +88,13 @@ A full local install to run the program or its executable tests involves these m
 
 # EboHub : Additional Project Information #
 
-EboHub began as a idea at Columbia University's Ebola Design Challenge in early September, 2014. After attending a talk about the ravages of the (then) young epidemic, I emerged very deeply moved. I started looking around to build a team that could work on a solution. My team had a current Sierra Leone healthcare worker, back from his first round of service; a business school alum; a microbiology Ph.D. candidate; a Biotech masters student; and a sophomore in my school. I was the sole designer and developer of the EboHub application.
+EboHub began as a idea at Columbia University's Ebola Design Challenge in early September, 2014. After attending a talk about the ravages of the (then) young epidemic, I emerged very deeply moved. I started looking around to form a team that could work on a solution. My team had a current Sierra Leone healthcare worker, back from his first round of service; a business school alum; a microbiology Ph.D. candidate; a Biotech masters student; and a sophomore in my school. I was the sole designer and developer of the EboHub application.
 
 I started developing EboHub in mid-September 2014. As it progressed, I got feedback from my team, from other groups including the [NYU hackathon](http://engineering.nyu.edu/events/2014/11/01/hack-ebola-nyu), and from [OpenIdeo](https://challenges.openideo.com/challenge/fighting-ebola/ideas/sms-civilian-helpline-and-disease-surveillance-system/comments#comments-section).
 
 It was built under time constraint from Columbia and NYU competitions, with an intense sense of racing against the epidemic, while trying my best to keep up with Freshman course work. I have worked on it for about 8 months now, through several iterations with feedback from healthcare workers (including the one on my team) and from the [*There Is No Limit* foundation](http://www.thereisnolimitfoundation.org/), an NGO based in Guinea. As of Summer 2015, EboHub was being prepared for piloting in Guinea by *There Is No Limit*. This NGO and I applied for USAID funding but we only made it to the 2nd round.
 
-### Evolution of EboHub ###
+### <a name="evolution"></a>Evolution of EboHub ###
 
 Here are some of my sketches of how the EboHub concept evolved over time, starting from that first Columbia meeting.
 
