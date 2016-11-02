@@ -123,13 +123,13 @@ Discussions with Aissata Camara as well as potential users in Guinea further inf
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172298/b08bc98a-8bca-11e5-850e-d0eecb6fe57c.png)
 
 
-## The Future of EboHub ##
+## <a name="future"></a>The Future of EboHub ##
 
 It is currently not clear if EboHub will be developed further. My NGO partner has contacts in Guinea healthcare and telecommunications who are interested in taking it further. However, there are now other solutions deployed in the region, and the health-care infrastructure for Ebola has been improved considerably. I have not decided whether to evolve it in the direction of a general disease surveillance platform for under-developed countries, but will willingly work further if the need arises. 
 
 Some of the top current items as of Summer 2015 include:
 
-  - Improved / customizable TODO case assignment to workers. I have previously used linear programming in [PyStemm](https://github.com/kdz/pystemm/blob/master/runnable_examples/chem_balance.py#L54-L83) and would use this approach to optimize TODOs, if only I could install it on Heroku!
+  - Improved / customizable TODO case assignment to workers. I have previously used linear programming in [PyStemm](https://github.com/kdz/pystemm/blob/master/runnable_examples/chem_balance.py#L54-L83) and would use this approach to optimize TODOs, if only I could install the libraries on Heroku!
   - Full support for contact-tracing: where a patient went, who was exposed, where they went, etc.
   - Integrate with iHRIS health-facility databases (e.g. where are beds available?) with 2-way data feeds
   - Internationalize the application (both SMS and Web interfaces)
