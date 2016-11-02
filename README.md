@@ -1,7 +1,7 @@
 
 # EboHub #
 
-EboHub is an cloud-based application to assist health-care workers, patients, and administrators coordinate disease surveillance and management on the frontlines of the battle against Ebola through SMS and web interfaces.
+EboHub is a cloud-based application to assist health-care workers, patients, and administrators coordinate disease surveillance and management on the frontlines of the battle against Ebola through SMS and web interfaces.
 
 ## The Problem and Constraints ##
 
@@ -127,10 +127,10 @@ Discussions with Aissata Camara as well as potential users in Guinea further inf
 
 It is currently not clear if EboHub will be developed further. My NGO partner has contacts in Guinea healthcare and telecommunications who are interested in taking it further. However, there are now other solutions deployed in the region, and the health-care infrastructure for Ebola has been improved considerably. I have not decided whether to evolve it in the direction of a general disease surveillance platform for under-developed countries, but will willingly work further if the need arises. 
 
-Some of the top current TODO items as of Summer 2015 include:
+Some of the top current items as of Summer 2015 include:
 
-  - Improved / customizable TODO case assignment to workers
-  - Full support contact-tracing
+  - Improved / customizable TODO case assignment to workers. I have previously used linear programming in [PyStemm](https://github.com/kdz/pystemm/blob/master/runnable_examples/chem_balance.py#L54-L83) and would use this approach to optimize TODOs, if only I could install it on Heroku!
+  - Full support for contact-tracing: where a patient went, who was exposed, where they went, etc.
   - Integrate with iHRIS health-facility databases (e.g. where are beds available?) with 2-way data feeds
   - Internationalize the application (both SMS and Web interfaces)
   - Abbreviated message formats
