@@ -14,7 +14,7 @@ from lib.log import log
 
 LOCAL_DB_DEFAULT = "postgres://localhost:5432/localDB"
 
-import os
+import os   # TODO: avoid os, use a env.py module to centralize all env-vars
 DATABASE_URL = os.environ.get('DATABASE_URL', LOCAL_DB_DEFAULT)
 
 import pw_database_url

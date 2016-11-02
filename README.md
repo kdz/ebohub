@@ -88,7 +88,7 @@ A full local install to run the program or its executable tests involves these m
 
 # EboHub : Additional Project Information #
 
-EboHub began as a idea at Columbia University's Ebola Design Challenge in early September, 2014. After attending a moving talk about the ravages of the (then) young epidemic, I teamed with a few others to work on a solution. My team had a current Sierra Leone healthcare worker, back from his first round of service; a business school alum; a microbiology Ph.D. candidate; a Biotech masters student; and a sophomore in my school. I was the sole designer and developer of the EboHub application.
+EboHub began as a idea at Columbia University's Ebola Design Challenge in early September, 2014. After attending a talk about the ravages of the (then) young epidemic, I emerged very deeply moved. I started looking around to build a team that could work on a solution. My team had a current Sierra Leone healthcare worker, back from his first round of service; a business school alum; a microbiology Ph.D. candidate; a Biotech masters student; and a sophomore in my school. I was the sole designer and developer of the EboHub application.
 
 I started developing EboHub in mid-September 2014. As it progressed, I got feedback from my team, from other groups including the [NYU hackathon](http://engineering.nyu.edu/events/2014/11/01/hack-ebola-nyu), and from [OpenIdeo](https://challenges.openideo.com/challenge/fighting-ebola/ideas/sms-civilian-helpline-and-disease-surveillance-system/comments#comments-section).
 
