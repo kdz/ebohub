@@ -3,7 +3,7 @@
 
 EboHub is an cloud-based application to assist health-care workers, patients, and administrators coordinate disease surveillance and management on the frontlines of the battle against Ebola through SMS and web interfaces.
 
-### The Problem and Constraints ###
+## The Problem and Constraints ##
 
 The [Ebola outbreak](http://www.bbc.com/news/world-africa-28755033) that started in 2014 is the deadliest outbreak in the history of the disease. The disease spread like wildfire, and the region had none of the infrastructure required to tackle it rapidly and effectively. Well over 10,000 people have died.
 
@@ -16,7 +16,7 @@ Major problems with the epidemic included:
   - Healthcare workers were recording patient, disease, and test data on paper
   - Mobile telecomm infrastructure was for feature phones (SMS-based) without web access
 
-### The Solution ###
+## The Solution ##
 
 I developed EboHub as a cloud-based service with a centralized disease database containing surveillance, case and contact-tracing data. It uses 2-way SMS interactions with health-care workers and the public (with call-in and browser-based interfaces as well), to provide real-time access to case status, to-do lists for workers, contact-tracing, symptom and care instructions, outbreak maps, and allows authorized workers to do SMS-driven updates to the disease database. 
 
@@ -24,7 +24,7 @@ EboHub uses Twilio as a gateway for SMS-Http and Voice-Http bridge services, Pyt
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172302/c1d32ae4-8bca-11e5-82be-e8d1f62ebe8b.png)
 
-### EboHub Strengths ###
+## EboHub Strengths ##
 
 EboHub is deployed as a robust functioning prototype with case surveillance, worker, patient, and facility coordination, and community education, which allows:
 
@@ -43,7 +43,7 @@ By building first and foremost atop a foundation of 2-way SMS communication, wit
 
 By continuously building up a shared cloud database, and providing systematic access to workers and the public to key parts of this data, both upon request and via “push”, EboHub will remove one important barrier to better managing the outbreak. Entire populations in the affected communities will benefit. Having clear, current, and consistent information available to both communities and health workers will reduce errors, miscommunications, rumors, and mistrust while increasing effective resource mobilization.
 
-### How To Use EboHub ###
+## How To Use EboHub ##
 
 The easiest way is to use the [system as currently deployed](ebohub.herokuapp.com) on Heroku, since it is already configured with a PostGres database and with a Twilio account and phone number for the SMS-http gateway. 
 
@@ -70,7 +70,7 @@ To use the currently deployed system:
   - An administrator sorts the tables by different columns to get overviews.
   - The administrator visits the `Logs and Map` page to look at the current outbreak map.
   
-### How to Install, Run, and Test the Program ###
+## How to Install, Run, and Test the Program ##
 
 A full local install to run the program or its executable tests involves these main steps (although it is easier to directly use the version I have deployed on Heroku instead).
 
@@ -94,36 +94,36 @@ I started developing EboHub in mid-September 2014. As it progressed, I got feedb
 
 It was built under time constraint from Columbia and NYU competitions, with an intense sense of racing against the epidemic, while trying my best to keep up with Freshman course work. I have worked on it for about 8 months now, through several iterations with feedback from healthcare workers (including the one on my team) and from the [*There Is No Limit* foundation](http://www.thereisnolimitfoundation.org/), an NGO based in Guinea. As of Summer 2015, EboHub was being prepared for piloting in Guinea by *There Is No Limit*. This NGO and I applied for USAID funding but we only made it to the 2nd round.
 
-### <a name="evolution"></a>Evolution of EboHub ###
+## <a name="evolution"></a>Evolution of EboHub ##
 
 Here are some of my sketches of how the EboHub concept evolved over time, starting from that first Columbia meeting.
 
-#### At the first meeting ####
+### At the first meeting ###
 
 A few notes about the technical challenges, absence of mobile web access, transportation. I was too shocked by the heartbreak of the disease itself to make notes about those.
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172315/e1134416-8bca-11e5-87d3-4dae40cb0671.png)
 
-#### *Before* the NYU Hackathon ####
+### *Before* the NYU Hackathon ###
 
 The basic architecture emerges of a Python app leveraging SMS communication. HW (Healthcare workers) get and update patient and suspect information about the outbreak, and the general public has a different interface to the app.
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172307/d0c2db94-8bca-11e5-833c-57db7b11d514.png)
 
-#### *After* the NYU Hackathon ####
+### *After* the NYU Hackathon ###
 
 Many more ideas of infrastructure to make the development more effective. Twilio as an SMS bridge, ngrok to help with local app development, the beginings of a web interface.
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172302/c1d32ae4-8bca-11e5-82be-e8d1f62ebe8b.png)
 
-#### *After* Partnering with *There Is No Limit* foundation ####
+### *After* Partnering with *There Is No Limit* foundation ###
 
 Discussions with Aissata Camara as well as potential users in Guinea further inform the next steps for EboHub. TODO lists assignment and optimization becomes a thing. We might also need to connect to existing healthcare IT systems.
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172298/b08bc98a-8bca-11e5-850e-d0eecb6fe57c.png)
 
 
-### The Future of EboHub ###
+## The Future of EboHub ##
 
 It is currently not clear if EboHub will be developed further. My NGO partner has contacts in Guinea healthcare and telecommunications who are interested in taking it further. However, there are now other solutions deployed in the region, and the health-care infrastructure for Ebola has been improved considerably. I have not decided whether to evolve it in the direction of a general disease surveillance platform for under-developed countries, but will willingly work further if the need arises. 
 
