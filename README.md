@@ -100,17 +100,25 @@ Here are some of my sketches of how the EboHub concept evolved over time, starti
 
 #### At the first meeting ####
 
+A few notes about the technical challenges, absence of mobile web access, transportation. I was too shocked by the heartbreak of the disease itself to make notes about those.
+
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172315/e1134416-8bca-11e5-87d3-4dae40cb0671.png)
 
 #### *Before* the NYU Hackathon ####
+
+The basic architecture emerges of a Python app leveraging SMS communication. HW (Healthcare workers) get and update patient and suspect information about the outbreak, and the general public has a different interface to the app.
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172307/d0c2db94-8bca-11e5-833c-57db7b11d514.png)
 
 #### *After* the NYU Hackathon ####
 
+Many more ideas of infrastructure to make the development more effective. Twilio as an SMS bridge, ngrok to help with local app development, the beginings of a web interface.
+
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172302/c1d32ae4-8bca-11e5-82be-e8d1f62ebe8b.png)
 
 #### *After* Partnering with *There Is No Limit* foundation ####
+
+Discussions with Aissata Cameron as well as potential users in Guinea further inform the next steps for EboHub. TODO lists assignment and optimization becomes a thing. We might also need to connect to existing healthcare IT systems.
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172298/b08bc98a-8bca-11e5-850e-d0eecb6fe57c.png)
 
