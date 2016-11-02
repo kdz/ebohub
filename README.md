@@ -118,7 +118,7 @@ Many more ideas of infrastructure to make the development more effective. Twilio
 
 #### *After* Partnering with *There Is No Limit* foundation ####
 
-Discussions with Aissata Cameron as well as potential users in Guinea further inform the next steps for EboHub. TODO lists assignment and optimization becomes a thing. We might also need to connect to existing healthcare IT systems.
+Discussions with Aissata Camara as well as potential users in Guinea further inform the next steps for EboHub. TODO lists assignment and optimization becomes a thing. We might also need to connect to existing healthcare IT systems.
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172298/b08bc98a-8bca-11e5-850e-d0eecb6fe57c.png)
 
