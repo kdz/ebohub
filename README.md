@@ -118,7 +118,7 @@ Many more ideas of infrastructure to make the development more effective. Twilio
 
 ### *After* Partnering with *There Is No Limit* foundation ###
 
-Discussions with Aissata Camara as well as potential users in Guinea further inform the next steps for EboHub. TODO lists assignment and optimization becomes a thing. We might also need to connect to existing healthcare IT systems.
+Discussions with Aissata Camara as well as potential users in Guinea further inform the next steps for EboHub. TODO lists assignment and optimization becomes a thing. Outbreak visualization via Google Maps is implemented. We might also need to connect to existing healthcare IT systems.
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/11172298/b08bc98a-8bca-11e5-850e-d0eecb6fe57c.png)
 
@@ -137,7 +137,9 @@ Some of the top current items as of Summer 2015 include:
   - More robust security
   - Hardware interface to a GSM modem for regions that do not even have SMS-infrastructure
 
-It has been, overall, an awesome experience.
+It has been, overall, an awesome experience. And it may not be over yet. In my current university Database course (Fall 2016), I chose in my course project to extend the database schema to improve its design as well as start covering some of the top TODOs. Here is a snapshot:
+
+![image](https://cloud.githubusercontent.com/assets/4351330/20047213/9b6e8e68-a477-11e6-8abc-b3cef90c4f45.png)
 
 
 
