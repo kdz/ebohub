@@ -145,7 +145,7 @@ And I plan to do more. In my current university Database course (Fall 2016), I c
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/20047213/9b6e8e68-a477-11e6-8abc-b3cef90c4f45.png)
 
-And a running demo, at least as long as the Azure machine hosting all the project databases for that class is kept running: [(demo)](http://ebohub.herokuapp.com/admin/) [(demo)](http://kad2185.ngrok.io/)
+And a running demo, at least as long as the Azure machine hosting all the project databases for that class is kept running: [(demo)](http://kad2185.ngrok.io/)
 
 
 
