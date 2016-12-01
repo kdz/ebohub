@@ -1,7 +1,9 @@
 
 # EboHub #
 
-Ebohub is a cloud-based application to assist health-care workers, patients, and administrators coordinate disease surveillance and management on the frontlines of the battle against Ebola through SMS and web interfaces. [(demo)](http://ebohub.herokuapp.com/admin/) [(video)](https://www.youtube.com/watch?v=OvI7ufNF1fw&t=3s)
+Ebohub is a cloud-based application to assist health-care workers, patients, and administrators coordinate disease surveillance and management on the frontlines of the battle against Ebola through SMS and web interfaces. 
+
+[(demo)](http://ebohub.herokuapp.com/admin/) [(video)](https://www.youtube.com/watch?v=OvI7ufNF1fw&t=3s)
 
 ## The Problem and Constraints ##
 
@@ -137,9 +139,13 @@ Some of the top current items as of Summer 2015 include:
   - More robust security
   - Hardware interface to a GSM modem for regions that do not even have SMS-infrastructure
 
-It has been, overall, an awesome experience. And it may not be over yet. In my current university Database course (Fall 2016), I chose in my course project to extend the database schema to improve its design as well as start covering some of the top TODOs. Here is a snapshot:
+It has been, overall, an awesome experience. 
+
+And I plan to do more. In my current university Database course (Fall 2016), I chose in my course project to extend the database schema to improve its design as well as start covering some of the top TODOs. Here is a schema snapshot:
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/20047213/9b6e8e68-a477-11e6-8abc-b3cef90c4f45.png)
+
+And a running demo, at least as long as the Azure machine hosting all the project databases for that class is kept running: [(demo)](http://ebohub.herokuapp.com/admin/) [(demo)](http://kad2185.ngrok.io/)
 
 
 
