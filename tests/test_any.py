@@ -26,7 +26,7 @@ def test_patient_loc():
   db_init.db_reset()
   p = Patient.select().where(Patient.id == 1).get()
   r = response_to_sms_body("loc Yorkville", p)
-  assert Patient.select().where(Patient.id == 1).get().loc == 1
+  assert Patient.select().where(Patient.id == 1).get().location.name == "Yorkville"
 
 def test_patient_sick():
   db_init.db_reset()
@@ -48,11 +48,19 @@ def test_hc_help():
 
 def test_hc_todo():
   db_init.db_reset()
-  h = HCWorker.select().where(HCWorker.id == 2).get()
-  assert response_to_sms_body("todo", h) == \
+  h = HCWorker.select().where(HCWorker.id == 3).get()
+  todos = response_to_sms_body("todo", h)
+  print("TODOS RESPONSE::\n", todos)
+  assert todos == \
   """INFECTED:
-  SUSPECT: 3 <Chiefdom: 'Yorkville'> sam phone: 15551112224
-  EXPOSED: 4 <Chiefdom: 'Yorkville'> earl phone: 15551112225"""
+ 6 hank
+   +15551112227
+SUSPECT:
+ 5 gary
+   +15551112226
+EXPOSED:
+ 4 earl
+   +15551112225"""
 
 # TODO: add tests for remaining HCWorker messages
 
