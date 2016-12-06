@@ -20,7 +20,7 @@ Major problems with the epidemic included:
 
 ## The Solution ##
 
-I developed EboHub as a cloud-based service with a centralized disease database containing surveillance, case and contact-tracing data. It uses 2-way SMS interactions with health-care workers and the public (with call-in and browser-based interfaces as well), to provide real-time access to case status, to-do lists for workers, contact-tracing, symptom and care instructions, outbreak maps, and allows authorized workers to do SMS-driven updates to the disease database. 
+I developed EboHub as a cloud-based service with a centralized disease database containing surveillance, case and contact-tracing data. It uses 2-way SMS interactions with health-care workers and the public (with call-in and browser-based interfaces as well), to provide real-time access to case status, to-do lists for workers, contact-tracing, symptom and care instructions, outbreak maps, and allows authorized workers to perform SMS-driven updates to the disease database. 
 
 EboHub uses Twilio as a gateway for SMS-Http and Voice-Http bridge services, Python as the implementation language, Flask as the web-server framework, PostGresql as a database, and Heroku as a scalable deployment platform. I used ngrok during development to route public HTTP requests (originating from SMS or browser interactions) to my laptop.
 
