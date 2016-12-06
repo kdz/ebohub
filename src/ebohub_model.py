@@ -10,7 +10,7 @@ from lib.log import log
 # Other suitable cloud DBs:
 # HEROKU_TEST_DB = "postgres://vyxede....."
 # ELEPHANTSQL_TEST_DB = "postgres://bffueem....."
-## THE PRODUCTION DB::
+## THE PRODUCTION DB:
 
 LOCAL_DB_DEFAULT = "postgres://localhost:5432/localDB"
 
