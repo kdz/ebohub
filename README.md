@@ -7,7 +7,7 @@ Ebohub is a cloud-based application to assist health-care workers, patients, and
 
 ## The Problem and Constraints ##
 
-The [Ebola outbreak](http://www.bbc.com/news/world-africa-28755033) that started in 2014 is the deadliest outbreak in the history of the disease. The disease spread like wildfire, and the region had none of the infrastructure required to tackle it rapidly and effectively. Well over 10,000 people have died.
+The [Ebola outbreak](http://www.bbc.com/news/world-africa-28755033) that started in 2014 is the deadliest outbreak in the history of the disease. The disease spread like wildfire, and the region lacked the infrastructure required to tackle it rapidly and effectively. Well over 10,000 people have died.
 
 Major problems with the epidemic included:
 
