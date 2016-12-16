@@ -3,7 +3,7 @@
 
 Ebohub is a cloud-based application to assist health-care workers, patients, and administrators coordinate disease surveillance and management on the frontlines of the battle against Ebola through SMS and web interfaces. 
 
-[(demo)](http://ebohub.herokuapp.com/admin/) [(video)](https://www.youtube.com/watch?v=OvI7ufNF1fw&t=3s)
+[(demo)](http://ebohub.7insights.com) [(video)](https://www.youtube.com/watch?v=OvI7ufNF1fw&t=3s)
 
 ## The Problem and Constraints ##
 
@@ -47,14 +47,14 @@ By continuously building up a shared cloud database, and providing systematic ac
 
 ## How To Use EboHub ##
 
-The easiest way is to use the [system as currently deployed](ebohub.herokuapp.com) on Heroku, since it is already configured with a PostGres database and with a Twilio account and phone number for the SMS-http gateway. 
+The easiest way is to use the [system as currently deployed](ebohub.7insights.com) in the cloud, since it is already configured with a PostGres database and with a Twilio account and phone number for the SMS-http gateway. 
 
 Note that aaccess controls are currently disabled to make it easy for the public to run demos. The home page has a link to reset the database if necessary.
 
 To use the currently deployed system:
 
   - Gather 2 or more cell phones. Let's call 2 of these phones `Patient` and `Nurse`.
-  - Point your web browser at [EboHub.herokuapp.com](http://ebohub.herokuapp.com).
+  - Point your web browser at [EboHub.7insights.com](http://ebohub.7insights.com).
   - Note the primary contact number for all Ebohub SMS and Voice interactions. Let's call this `EboNumber`.
   - Browse the list of current patients, chiefdoms (regions), and health care workers.
   - `Patient` sends `#help` to `EboNumber` to see SMS options as a patient.
@@ -74,7 +74,7 @@ To use the currently deployed system:
   
 ## How to Install, Run, and Test the Program ##
 
-A full local install to run the program or its executable tests involves these main steps (although it is easier to directly use the version I have deployed on Heroku instead).
+A full local install to run the program or its executable tests involves these main steps (although it is easier to directly use the version I have deployed).
 
 1. Unzip the zip file of the entire program, or `git clone` from [github](https://github.com/kdz/ebohub)
 2. Install Python 3.4, recommended source: [anaconda](https://www.continuum.io/downloads)
@@ -145,7 +145,7 @@ And I plan to do more. In my current university Database course (Fall 2016), I c
 
 ![image](https://cloud.githubusercontent.com/assets/4351330/20047213/9b6e8e68-a477-11e6-8abc-b3cef90c4f45.png)
 
-And a running demo, at least as long as the Azure machine hosting all the project databases for that class is kept running: [(demo)](http://kad2185.ngrok.io/)
+And a running demo, at least as long as the Azure machine hosting all the project databases for that class is kept running: [(demo)](http://infecdb.7insights.com/)
 
 
 
