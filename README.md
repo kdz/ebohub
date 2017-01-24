@@ -7,16 +7,16 @@ Ebohub is a cloud-based application to assist health-care workers, patients, and
 
 ## The Problem and Constraints ##
 
-The [Ebola outbreak](http://www.bbc.com/news/world-africa-28755033) that started in 2014 is the deadliest outbreak in the history of the disease. The disease spread like wildfire, and the region lacked the infrastructure required to tackle it rapidly and effectively. Well over 10,000 people have died.
+The [Ebola outbreak](http://www.bbc.com/news/world-africa-28755033) that started in 2014 was the deadliest outbreak in the history of the disease. The disease spread like wildfire, and the region lacked the infrastructure required to tackle it rapidly and effectively. Well over 11,000 people died.
 
 Major problems with the epidemic included:
 
-  - Health care workers have to personally identify remote infections, suspects, and exposures
-  - Patients can only be safely handled at suitably equipped Ebola response centers
-  - There are few ways to disseminate information or to reach out to local communities
+  - Health care workers had to personally identify remote infections, suspects, and exposures
+  - Patients could only be safely handled at suitably equipped Ebola response centers
+  - There were few ways to disseminate information or to reach out to local communities
   - There was no central coordinated surveillance system that connected to the public and workers
   - Healthcare workers were recording patient, disease, and test data on paper
-  - Mobile telecomm infrastructure was for feature phones (SMS-based) without web access
+  - Mobile telecomm infrastructure was for feature phones only (SMS-based) with no web access
 
 ## The Solution ##
 
